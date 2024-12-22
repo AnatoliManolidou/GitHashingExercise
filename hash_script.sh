@@ -9,6 +9,6 @@ hash_output=$(echo -n "$1" | sha256sum | awk '{print $1}')
 #Print the output in the screen 
 echo "Hash output: $hash_output"
 
-#Overwrite the outpit to hash_output.txt
+#Overwrite the output to hash_output.txt
 echo "Hash output: $hash_output" > "hash_output.txt"
 
